@@ -19,7 +19,7 @@
 
             <div class="row">
                 @foreach ($data['items'] as $item)
-                    <div class="col-md-6 col-12 mt-4 pt-2">
+                    <div class="col-md-4 col-12 mt-4 pt-2">
                         <div
                             class="card work-container work-modern position-relative overflow-hidden shadow rounded border-0">
                             <div class="card-body p-0">
@@ -53,7 +53,8 @@
                             </p>
                             @if ($data['footer']['BTN']['show'])
                                 <div class="mt-4">
-                                    <a href="{{ $data['footer']['BTN']['link'] }}" class="btn btn-outline-primary mt-2">
+                                    <a href="{{ $data['footer']['BTN']['link'] }}"
+                                        class="btn btn-outline-primary mt-2">
                                         {{ $data['footer']['BTN']['caption'] }}
                                     </a>
                                 </div>

@@ -33,3 +33,6 @@ Copy and replace [contact.js] file to your [public/front/default/js].
 Copy [php] folder to your [public/].
 </li>
 </ol>
+<pre>
+cd /home/eatfranchise.com/demo
+</pre>

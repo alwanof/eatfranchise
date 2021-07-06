@@ -22,8 +22,7 @@
 
                              @foreach ($data['listItem']['li'] as $item)
 
-                                 <li class="mb-0"><span class="text-primary h5 me-2"><i
-                                             class="uil uil-check-circle align-middle"></i></span>
+                                 <li class="mb-2"><i class="uil uil-check-circle align-middle text-primary h5"></i>
                                      {{ $item['caption'] }}
                                  </li>
 
