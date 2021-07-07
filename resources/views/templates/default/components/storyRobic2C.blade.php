@@ -21,7 +21,8 @@
                            <div class="section-title">
                                <h4 class="title mb-4">{{ $data['titleCaption'] }}</h4>
                                <p class="text-muted">
-                                   {{ $data['content1Caption'] }}
+
+                                   {!! $data['content1Caption'] !!}
                                </p>
                                @if ($data['BTN']['show'])
                                    <a href="{{ $data['BTN']['link'] }}"

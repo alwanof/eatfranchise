@@ -24,9 +24,11 @@
         <!--end container-->
     </section>
     <!--end section-->
+    @foreach ($data['pages'][$slug]['components'] as $component)
+        @include('templates.default.components.'.$component['file'],['data'=>$data['pages'][$slug][$component['name']]])
+    @endforeach
 
-    @include('templates.default.components.storyRobic2C',['data'=>$data['pages'][$slug]['storyRobic2C']])
-    @include('templates.default.components.servicesA3C',['data'=>$data['pages'][$slug]['servicesA3C']])
+
 
 
 
