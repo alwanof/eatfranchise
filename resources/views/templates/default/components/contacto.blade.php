@@ -14,7 +14,11 @@
         <!--end row-->
     </div>
     <!--end container-->
-
+    <div class="container mt-4">
+        @foreach ($data['components'] as $component)
+            @include('templates.default.components.'.$component['file'],['data'=>$data[$component['name']]])
+        @endforeach
+    </div>
     <div class="container mt-100 mt-60">
         <div class="row align-items-center">
             <div class="col-lg-5 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0 order-2 order-md-1">
