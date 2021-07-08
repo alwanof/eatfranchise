@@ -49,6 +49,16 @@ Route::group(['middleware' => 'lang'], function () {
 
         return view('templates.default.contact', compact('data', 'lang'));
     });
+    Route::get('/faqs', function () {
+        $lang = session()->get('lang') ?? 'en';
+        $path = "storage/json/" . $lang . ".json"; // ie: /var/www/laravel/app/storage/json/filename.json
+        if (!File::exists($path)) {
+            throw new Exception("Invalid Data File");
+        }
+        $data = json_decode(File::get($path), true); // string
+
+        return view('templates.default.faqs', compact('data', 'lang'));
+    });
 });
 
 Route::post('/contact', function (Request $request) {
