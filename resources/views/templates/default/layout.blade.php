@@ -5,8 +5,8 @@
     <title>{{ env('APP_NAME') }}| @yield('title')</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
-    <meta name="keywords" content="Saas, Software, multi-uses, HTML, Clean, Modern" />
+    <meta name="description" content="EAST AFRICAN TASTE" />
+    <meta name="keywords" content="AFRICAN,TASTE" />
     <meta name="author" content="Shreethemes" />
     <meta name="email" content="support@shreethemes.in" />
     <meta name="website" content="https://shreethemes.in" />
@@ -41,8 +41,8 @@
 
     @endif
 
-    <link href="{{ asset('front/default/css/colors/' . $data['generalSettings']['color'] . '.css') }}" rel="stylesheet"
-        id="color-opt" />
+    <link href="{{ asset('front/default/css/colors/' . $data['generalSettings']['color'] . '.css') }}"
+        rel="stylesheet" id="color-opt" />
 
 
 
