@@ -25,6 +25,11 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 $name     = $_POST['name'];
 $email    = $_POST['email'];
+$phone    = $_POST['phone'];
+$country    = $_POST['country'];
+$city    = $_POST['city'];
+$address    = $_POST['address'];
+$subject    = $_POST['subject'];
 $comments = $_POST['comments'];
 
 if (trim($name) == '') {
@@ -32,6 +37,21 @@ if (trim($name) == '') {
     exit();
 } else if (trim($email) == '') {
     echo '<div class="error_message">Please enter a valid email address.</div>';
+    exit();
+} else if (trim($phone) == '') {
+    echo '<div class="error_message">Please enter a valid phone .</div>';
+    exit();
+} else if (trim($country) == '') {
+    echo '<div class="error_message">Please enter a valid country .</div>';
+    exit();
+} else if (trim($city) == '') {
+    echo '<div class="error_message">Please enter a valid city .</div>';
+    exit();
+} else if (trim($address) == '') {
+    echo '<div class="error_message">Please enter a valid address .</div>';
+    exit();
+} else if (trim($subject) == '') {
+    echo '<div class="error_message">Please enter a valid subject.</div>';
     exit();
 } else if (!isEmail($email)) {
     echo '<div class="error_message">You have entered an invalid e-mail address. Please try again.</div>';
@@ -61,14 +81,17 @@ $address = "israr@totilgroup.com";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'You have been contacted by ' . $name . '.';
+$e_subject = 'You have been contacted by ' . $name . ' - ' . $subject;
 
 
 // Configuration option.
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "You have been contacted by $name. Their additional message is as follows." . PHP_EOL . PHP_EOL;
+$e_body = "You have been contacted by $name. " . PHP_EOL . PHP_EOL;
+$e_body = $e_body . "Subbject: $subject. Their additional message is as follows." . PHP_EOL . PHP_EOL;
+$e_body = $e_body . "Phone: $phone. / $city / $country." . PHP_EOL . PHP_EOL;
+$e_body = $e_body . "Address: $address." . PHP_EOL . PHP_EOL;
 $e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
 $e_reply = "You can contact $name via email, $email";
 

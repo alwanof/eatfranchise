@@ -52,7 +52,53 @@
                                 </div>
                             </div>
                             <!--end col-->
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label
+                                        class="form-label">{{ $data['form']['items']['lebalPhoneCaption'] }}</label>
+                                    <div class="form-icon position-relative">
+                                        <i data-feather="phone" class="fea icon-sm icons"></i>
+                                        <input name="phone" id="phone" class="form-control ps-5" placeholder="+">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">{{ $data['form']['items']['lebalCountryCaption'] }}
+                                        <span class="text-danger">*</span></label>
+                                    <div class="form-icon position-relative">
+                                        <i data-feather="map" class="fea icon-sm icons"></i>
+                                        <input name="country" id="country" type="text" class="form-control ps-5"
+                                            placeholder="{{ $data['form']['items']['countryCaption'] }} :">
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">{{ $data['form']['items']['lebalCityCaption'] }} <span
+                                            class="text-danger">*</span></label>
+                                    <div class="form-icon position-relative">
+                                        <i data-feather="map-pin" class="fea icon-sm icons"></i>
+                                        <input name="city" id="city" type="text" class="form-control ps-5"
+                                            placeholder="{{ $data['form']['items']['cityCaption'] }} :">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end col-->
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label
+                                        class="form-label">{{ $data['form']['items']['lebalAddressCaption'] }}</label>
+                                    <div class="form-icon position-relative">
+                                        <i data-feather="map-pin" class="fea icon-sm icons"></i>
+                                        <input name="address" id="address" class="form-control ps-5"
+                                            placeholder="{{ $data['form']['items']['addressCaption'] }} :">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end col-->
                             <div class="col-12">
                                 <div class="mb-3">
                                     <label
