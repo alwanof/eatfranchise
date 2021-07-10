@@ -157,7 +157,7 @@
                         <div class="flex-1 content">
                             <h6 class="title fw-bold mb-0">{{ $data['elements'][0]['caption'] }}</h6>
                             <a href="mailto:{{ $data['elements'][0]['value'] }}"
-                                class="text-primary">{{ $data['elements'][0]['value'] }}/a>
+                                class="text-primary">{{ $data['elements'][0]['value'] }}</a>
                         </div>
                     </div>
 

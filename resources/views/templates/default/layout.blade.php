@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="EAST AFRICAN TASTE" />
     <meta name="keywords" content="AFRICAN,TASTE" />
-    <meta name="author" content="Shreethemes" />
-    <meta name="email" content="support@shreethemes.in" />
-    <meta name="website" content="https://shreethemes.in" />
+    <meta name="author" content="eatfranchise/" />
+    <meta name="email" content="info@eatfranchise.com" />
+    <meta name="website" content="https://eatfranchise.com/" />
     <meta name="Version" content="v3.2.0" />
 
     <!-- favicon icon -->
@@ -64,7 +64,7 @@
     <header id="topnav" class="defaultscroll sticky">
         <div class="container">
             <!-- Logo container-->
-            <a class="logo" href="index.html">
+            <a class="logo" href="https://eatfranchise.com/">
                 <img src="{{ $data['home'][0]['topBar']['logoDark'] }}" height="24" class="logo-light-mode" alt="">
                 <img src="{{ $data['home'][0]['topBar']['logoLight'] }}" height="24" class="logo-dark-mode" alt="">
             </a>
