@@ -44,7 +44,7 @@
                         <div class="card text-center rounded border-0">
                             <div class="card-body">
                                 <div class="p-3 bg-light rounded shadow d-inline-block">
-                                    <img src="{{ $card['icon'] }}" class="avatar" alt="">
+                                    <img src="{{ $card['icon'] }}" class="avatar" width="225px" alt="">
                                 </div>
                                 <div class="mt-4">
                                     <h5><a href="javascript:void(0)" class="text-dark">{{ $card['caption'] }}</a>

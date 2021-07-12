@@ -47,7 +47,7 @@
                                     <img src="{{ $card['icon'] }}" class="avatar avatar-small" alt="">
                                 </div>
                                 <div class="mt-4">
-                                    <h5><a href="javascript:void(0)" class="text-dark">{{ $card['caption'] }}</a>
+                                    <h5><a href="javascript:void(0)" class="text-dark">{{ $card['caption'] }}+</a>
                                     </h5>
                                     <p class="text-muted mt-3 mb-0">
                                         {!! $card['descriptionCaption'] !!}
