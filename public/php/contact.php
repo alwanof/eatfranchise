@@ -105,18 +105,19 @@ $headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
 
 try {
 
+
     //Server settings
-    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'smtp.mailtrap.io';                     //Set the SMTP server to send through
+    $mail->Host       = 'smtp.yandex.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = '63d456afdf7078';                     //SMTP username
-    $mail->Password   = '7faa5050001037';                               //SMTP password
+    $mail->Username   = 'info@eatfranchise.com';                     //SMTP username
+    $mail->Password   = 'info=2021*-';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 2525;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('info@example.com', 'Mailer');
+    $mail->setFrom('info@eatfranchise.com', 'Mailer');
     $mail->addAddress($address, $name);     //Add a recipient
 
 
